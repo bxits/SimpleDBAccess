@@ -16,7 +16,8 @@ using System.Windows.Shapes;
 //Vorher die dll MySql.Data.dll zu den Verweisen hinzufügen.
 //dann kann man auf den Namespace verweisen.
 //Quelle: https://dev.mysql.com/downloads/connector/net/
-using MySql.Data.MySqlClient;
+
+using MySqlConnector;
 
 namespace SimpleDBAccess
 {
@@ -42,7 +43,7 @@ namespace SimpleDBAccess
             ///- User, der auf die Datenbank zugreifen darf und
             ///- Passwort (Sicherheitskriterien beachten!)
             ///Natürlich müssen Datenbank und User auf der Datenbank existieren.
-            MySqlConnection con = new MySqlConnection(@"SERVER = 192.168.7.7;DATABASE=demodb;UID=user1;PASSWORD=pwd1;");
+            MySqlConnection con = new MySqlConnection(@"SERVER = localhost;DATABASE=demodb;UID=user1;PASSWORD=pwd1;");
             
             //Nachdem die Zugangsdaten gesetzt wurden, können wir den "Kanal" zur Datenbank öffnen.
             con.Open();  //Jetzt greift unser Programm über das Netzwerk/lokal auf die Datenbank zu.
