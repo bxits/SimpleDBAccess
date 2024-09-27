@@ -13,9 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-//Vorher die dll MySql.Data.dll zu den Verweisen hinzufügen.
-//dann kann man auf den Namespace verweisen.
-//Quelle: https://dev.mysql.com/downloads/connector/net/
+// Wird zuerst benötigt: Projekt -> NuGet-Paket Verwalten
+// -> "MySqlConnector" suchen und installieren
 
 using MySqlConnector;
 
